@@ -15,16 +15,16 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 //		body = GetComponent<Rigidbody2D>();
 		
-//		// Distance between the camera and the player object
-//		float distance = transform.position.z - Camera.main.transform.position.z;
-//		
-//		// X, Y values are relative to the screen (0-1).
-//		Vector3 leftmostPosition = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance));
-//		Vector3 rightmostPosition = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distance));
-//	
-//		// Calculate xmin and xmax from the camera
-//		xmin = leftmostPosition.x + padding;
-//		xmax = rightmostPosition.x - padding;
+		// Distance between the camera and the player object
+		float distance = transform.position.z - Camera.main.transform.position.z;
+		
+		// X, Y values are relative to the screen (0-1).
+		Vector3 leftmostPosition = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance));
+		Vector3 rightmostPosition = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distance));
+	
+		// Calculate xmin and xmax from the camera, instead of preset values.
+		xmin = leftmostPosition.x + padding;
+		xmax = rightmostPosition.x - padding;
 	}
 	
 	// Update is called once before rendering per frame

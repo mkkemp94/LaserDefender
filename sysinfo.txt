@@ -1,0 +1,254 @@
+System:
+  OS: Windows 10  (10.0.0) 64bit
+  CPU: Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz, count: 8
+  Physical RAM: 8072 MB
+  Addressable RAM: 2048 MB
+
+D3D9:
+  Renderer: Intel(R) HD Graphics 4600
+  VendorID: 8086
+  Driver: igdumdim32.dll 10.18.15.4256
+  VRAM: 1136 (via DXGI)
+
+OpenGL:
+  Version: 4.3.0 - Build 10.18.15.4256
+  Vendor: Intel
+  Renderer: Intel(R) HD Graphics 4600
+  VRAM: 1136 (via DXGI)
+  Extensions: GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_blend_color GL_EXT_abgr GL_EXT_texture3D GL_EXT_clip_volume_hint GL_EXT_compiled_vertex_array GL_SGIS_texture_edge_clamp GL_SGIS_generate_mipmap GL_EXT_draw_range_elements GL_SGIS_texture_lod GL_EXT_rescale_normal GL_EXT_packed_pixels GL_EXT_texture_edge_clamp GL_EXT_separate_specular_color GL_ARB_multitexture GL_ARB_map_buffer_alignment GL_ARB_conservative_depth GL_EXT_texture_env_combine GL_EXT_bgra GL_EXT_blend_func_separate GL_EXT_secondary_color GL_EXT_fog_coord GL_EXT_texture_env_add GL_ARB_texture_cube_map GL_ARB_transpose_matrix GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_texture_env_add GL_IBM_texture_mirrored_repeat GL_ARB_texture_mirrored_repeat GL_EXT_multi_draw_arrays GL_SUN_multi_draw_arrays GL_NV_blend_square GL_ARB_texture_compression GL_3DFX_texture_compression_FXT1 GL_EXT_texture_filter_anisotropic GL_ARB_texture_border_clamp GL_ARB_point_parameters GL_ARB_texture_env_combine GL_ARB_texture_env_dot3 GL_ARB_texture_env_crossbar GL_EXT_texture_compression_s3tc GL_ARB_shadow GL_ARB_window_pos GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_ARB_vertex_program GL_EXT_texture_rectangle GL_ARB_fragment_program GL_EXT_stencil_two_side GL_ATI_separate_stencil GL_ARB_vertex_buffer_object GL_EXT_texture_lod_bias GL_ARB_occlusion_query GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_shading_language_100 GL_ARB_texture_non_power_of_two GL_ARB_vertex_shader GL_NV_texgen_reflection GL_ARB_point_sprite GL_ARB_fragment_program_shadow GL_EXT_blend_equation_separate GL_ARB_depth_texture GL_ARB_texture_rectangle GL_ARB_draw_buffers GL_ARB_color_buffer_float GL_ARB_half_float_pixel GL_ARB_texture_float GL_ARB_pixel_buffer_object GL_EXT_framebuffer_object GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_occlusion_query2 GL_EXT_draw_buffers2 GL_WIN_swap_hint GL_EXT_texture_sRGB GL_ARB_multisample GL_EXT_packed_float GL_EXT_texture_shared_exponent GL_ARB_texture_rg GL_ARB_texture_compression_rgtc GL_NV_conditional_render GL_ARB_texture_swizzle GL_EXT_texture_swizzle GL_ARB_texture_gather GL_ARB_sync GL_ARB_cl_event GL_ARB_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_ARB_depth_buffer_float GL_EXT_transform_feedback GL_ARB_transform_feedback2 GL_ARB_draw_indirect GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_ARB_framebuffer_object GL_ARB_framebuffer_no_attachments GL_EXT_texture_array GL_EXT_texture_integer GL_ARB_map_buffer_range GL_ARB_texture_buffer_range GL_EXT_texture_snorm GL_ARB_blend_func_extended GL_INTEL_performance_query GL_ARB_copy_buffer GL_ARB_sampler_objects GL_NV_primitive_restart GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_uniform_buffer_object GL_ARB_depth_clamp GL_ARB_vertex_array_bgra GL_ARB_shader_bit_encoding GL_ARB_draw_buffers_blend GL_ARB_geometry_shader4 GL_EXT_geometry_shader4 GL_ARB_texture_query_lod GL_ARB_explicit_attrib_location GL_ARB_draw_elements_base_vertex GL_EXT_shader_integer_mix GL_ARB_instanced_arrays GL_ARB_base_instance GL_ARB_fragment_coord_conventions GL_EXT_gpu_program_parameters GL_ARB_texture_buffer_object_rgb32 GL_ARB_compatibility GL_ARB_texture_rgb10_a2ui GL_ARB_texture_multisample GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_timer_query GL_ARB_tessellation_shader GL_ARB_vertex_array_object GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_texture_cube_map_array GL_EXT_gpu_shader4 GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_INTEL_fragment_shader_ordering GL_EXT_clip_control GL_ARB_shader_subroutine GL_ARB_transform_feedback3 GL_ARB_get_program_binary GL_ARB_separate_shader_objects GL_ARB_shader_precision GL_ARB_vertex_attrib_64bit GL_ARB_viewport_array GL_ARB_transform_feedback_instanced GL_ARB_compressed_texture_pixel_storage GL_ARB_shader_atomic_counters GL_ARB_shading_language_packing GL_ARB_shader_image_load_store GL_EXT_shader_image_load_store GL_ARB_shading_language_420pack GL_ARB_texture_storage GL_EXT_texture_storage GL_ARB_compute_shader GL_ARB_vertex_attrib_binding GL_ARB_texture_view GL_ARB_fragment_layer_viewport GL_ARB_multi_draw_indirect GL_ARB_program_interface_query GL_ARB_shader_image_size GL_ARB_shader_storage_buffer_object GL_ARB_texture_storage_multisample GL_ARB_buffer_storage GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ARB_query_buffer_object GL_EXT_polygon_offset_clamp GL_ARB_clear_texture GL_ARB_texture_mirror_clamp_to_edge GL_ARB_debug_output GL_ARB_enhanced_layouts GL_KHR_debug GL_ARB_arrays_of_arrays GL_ARB_texture_query_levels GL_ARB_invalidate_subdata GL_ARB_clear_buffer_object GL_INTEL_map_texture GL_ARB_texture_compression_bptc GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_robustness GL_ARB_robust_buffer_access_behavior GL_EXT_texture_sRGB_decode GL_ARB_copy_image GL_KHR_blend_equation_advanced GL_EXT_direct_state_access GL_ARB_stencil_texturing GL_ARB_texture_stencil8 GL_ARB_explicit_uniform_location GL_ARB_multi_bind GL_ARB_indirect_parameters 
+
+User locale: en-US
+System locale: en-US
+
+Running processes:
+NvBackend.exe (13440)
+    path: C:\Program Files (x86)\NVIDIA Corporation\Update Core\NvBackend.exe
+    company:  NVIDIA Corporation
+    product:  NVIDIA Backend
+    filedesc: NVIDIA Backend
+    filever:  18.4.1.0
+    prodver:  18.4.1.0
+BingSvc.exe (12988)
+    path: C:\Users\kempm\AppData\Local\Microsoft\BingSvc\BingSvc.exe
+    company:  © 2015 Microsoft Corporation
+    product:  Microsoft Bing Service
+    filedesc: Microsoft Bing Service
+    filever:  1.0.6.0
+    prodver:  1.0.6.0
+flux.exe (5532)
+    path: C:\Users\kempm\AppData\Local\FluxSoftware\Flux\flux.exe
+    company:  f.lux Software LLC
+    product:  f.lux
+    filedesc: f.lux
+    filever:  4.55.0.0
+    prodver:  4.55.0.1
+googledrivesync.exe (18288)
+    path: C:\Program Files (x86)\Google\Drive\googledrivesync.exe
+    company:  
+    product:  
+    filedesc: 
+    filever:  3.38.7642.3857
+    prodver:  3.38.7642.3857
+hpqtra08.exe (4784)
+    path: C:\Program Files (x86)\HP\Digital Imaging\bin\hpqtra08.exe
+    company:  Hewlett-Packard Co.
+    product:  HP Digital Imaging
+    filedesc: HP Digital Imaging Monitor
+    filever:  140.0.212.0
+    prodver:  140.0.0.0
+ALMon.exe (3076)
+    path: C:\Program Files (x86)\Sophos\AutoUpdate\ALMon.exe
+    company:  Sophos Limited
+    product:  Sophos AutoUpdate
+    filedesc: Sophos Endpoint Security and Control
+    filever:  5.4.0.724
+    prodver:  5.4.0.0
+jusched.exe (10872)
+    path: C:\Program Files (x86)\Common Files\Java\Java Update\jusched.exe
+    company:  Oracle Corporation
+    product:  Java Platform SE Auto Updater
+    filedesc: Java Update Scheduler
+    filever:  2.8.144.1
+    prodver:  2.8.144.1
+ONENOTEM.EXE (10548)
+    path: C:\Program Files (x86)\Microsoft Office\root\Office16\ONENOTEM.EXE
+    company:  Microsoft Corporation
+    product:  Microsoft OneNote
+    filedesc: Send to OneNote Tool
+    filever:  16.0.8201.2213
+    prodver:  16.0.8201.2213
+hpwuschd2.exe (320)
+    path: C:\Program Files (x86)\HP\HP Software Update\hpwuschd2.exe
+    company:  Hewlett-Packard
+    product:   hpwuSchd Application
+    filedesc: hpwuSchd Application
+    filever:  80.1.0.0
+    prodver:  80.1.0.0
+Overwolf.exe (17616)
+    path: C:\Program Files (x86)\Overwolf\Overwolf.exe
+    company:  Overwolf LTD
+    product:  Overwolf
+    filedesc: Overwolf
+    filever:  0.109.1.40
+    prodver:  0.109.1.40
+OverwolfBrowser.exe (16892)
+    path: C:\Program Files (x86)\Overwolf\0.109.1.38\OverwolfBrowser.exe
+    company:  Overwolf LTD
+    product:  Overwolf
+    filedesc: OverwolfBrowser
+    filever:  0.109.1.38
+    prodver:  0.109.1.38
+OverwolfBrowser.exe (16156)
+    path: C:\Program Files (x86)\Overwolf\0.109.1.38\OverwolfBrowser.exe
+    company:  Overwolf LTD
+    product:  Overwolf
+    filedesc: OverwolfBrowser
+    filever:  0.109.1.38
+    prodver:  0.109.1.38
+googledrivesync.exe (15952)
+    path: C:\Program Files (x86)\Google\Drive\googledrivesync.exe
+    company:  
+    product:  
+    filedesc: 
+    filever:  3.38.7642.3857
+    prodver:  3.38.7642.3857
+GOOGLE~1.EXE (19076)
+    path: C:\PROGRA~2\Google\Drive\GOOGLE~1.EXE
+    company:  
+    product:  
+    filedesc: 
+    filever:  3.38.7642.3857
+    prodver:  3.38.7642.3857
+GOOGLE~1.EXE (13180)
+    path: C:\PROGRA~2\Google\Drive\GOOGLE~1.EXE
+    company:  
+    product:  
+    filedesc: 
+    filever:  3.38.7642.3857
+    prodver:  3.38.7642.3857
+jucheck.exe (10504)
+    path: C:\Program Files (x86)\Common Files\Java\Java Update\jucheck.exe
+    company:  Oracle Corporation
+    product:  Java Platform SE Auto Updater
+    filedesc: Java Update Checker
+    filever:  2.8.144.1
+    prodver:  2.8.144.1
+DllHost.exe (8740)
+    path: C:\WINDOWS\SysWOW64\DllHost.exe
+    company:  Microsoft Corporation
+    product:  Microsoft® Windows® Operating System
+    filedesc: COM Surrogate
+    filever:  10.0.16299.15
+    prodver:  10.0.16299.15
+Steam.exe (18976)
+    path: C:\Program Files (x86)\Steam\Steam.exe
+    company:  Valve Corporation
+    product:  Steam Client Bootstrapper
+    filedesc: Steam Client Bootstrapper
+    filever:  4.28.51.7
+    prodver:  1.0.0.1
+steamwebhelper.exe (18520)
+    path: C:\Program Files (x86)\Steam\bin\cef\cef.win7\steamwebhelper.exe
+    company:  Valve Corporation
+    product:  Steam Client WebHelper
+    filedesc: Steam Client WebHelper
+    filever:  4.28.51.7
+    prodver:  1.0.0.1
+steamwebhelper.exe (2868)
+    path: C:\Program Files (x86)\Steam\bin\cef\cef.win7\steamwebhelper.exe
+    company:  Valve Corporation
+    product:  Steam Client WebHelper
+    filedesc: Steam Client WebHelper
+    filever:  4.28.51.7
+    prodver:  1.0.0.1
+steamwebhelper.exe (14960)
+    path: C:\Program Files (x86)\Steam\bin\cef\cef.win7\steamwebhelper.exe
+    company:  Valve Corporation
+    product:  Steam Client WebHelper
+    filedesc: Steam Client WebHelper
+    filever:  4.28.51.7
+    prodver:  1.0.0.1
+Battle.net.exe (12176)
+    path: C:\Program Files (x86)\Battle.net\Battle.net.exe
+    company:  Blizzard Entertainment
+    product:  Blizzard Battle.net App
+    filedesc: Blizzard Battle.net App
+    filever:  1.9.3.9679
+    prodver:  1.9.3.9679
+Battle.net Helper.exe (8024)
+    path: C:\Program Files (x86)\Battle.net\Battle.net.9679\Battle.net Helper.exe
+    company:  
+    product:  
+    filedesc: 
+    filever:  0.0.0.0
+    prodver:  0.0.0.0
+Agent.exe (16612)
+    path: C:\ProgramData\Battle.net\Agent\Agent.5996\Agent.exe
+    company:  Blizzard Entertainment
+    product:  Blizzard Update Agent
+    filedesc: Blizzard Update Agent
+    filever:  2.13.7.5996
+    prodver:  2.13.7.5996
+MonoDevelop.exe (17588)
+    path: C:\Program Files (x86)\Unity\MonoDevelop\bin\MonoDevelop.exe
+    company:  
+    product:  MonoDevelop
+    filedesc: MonoDevelop
+    filever:  2.6.0.0
+    prodver:  2.6.0.0
+adb.exe (12068)
+    path: C:\Users\kempm\AppData\Local\Android\android-sdk\platform-tools\adb.exe
+    company:  
+    product:  
+    filedesc: 
+    filever:  0.0.0.0
+    prodver:  0.0.0.0
+Battle.net Helper.exe (11252)
+    path: C:\Program Files (x86)\Battle.net\Battle.net.9679\Battle.net Helper.exe
+    company:  
+    product:  
+    filedesc: 
+    filever:  0.0.0.0
+    prodver:  0.0.0.0
+Unity.exe (15204)
+    path: C:\Program Files (x86)\Unity\Editor\Unity.exe
+    company:  Unity Technologies ApS
+    product:  Unity
+    filedesc: Unity Editor
+    filever:  4.7.2.65147
+    prodver:  4.7.2.65147
+Hearthstone.exe (14704)
+    path: C:\Program Files (x86)\Hearthstone\Hearthstone.exe
+    company:  
+    product:  
+    filedesc: 
+    filever:  10.0.0.22611
+    prodver:  10.0.0.22611
+OverwolfBrowser.exe (1976)
+    path: C:\Program Files (x86)\Overwolf\0.109.1.38\OverwolfBrowser.exe
+    company:  Overwolf LTD
+    product:  Overwolf
+    filedesc: OverwolfBrowser
+    filever:  0.109.1.38
+    prodver:  0.109.1.38
+OverwolfBrowser.exe (10968)
+    path: C:\Program Files (x86)\Overwolf\0.109.1.38\OverwolfBrowser.exe
+    company:  Overwolf LTD
+    product:  Overwolf
+    filedesc: OverwolfBrowser
+    filever:  0.109.1.38
+    prodver:  0.109.1.38
+OverwolfBrowser.exe (4088)
+    path: C:\Program Files (x86)\Overwolf\0.109.1.38\OverwolfBrowser.exe
+    company:  Overwolf LTD
+    product:  Overwolf
+    filedesc: OverwolfBrowser
+    filever:  0.109.1.38
+    prodver:  0.109.1.38
+UnityBugReporter.exe (12216)
+    path: C:\Program Files (x86)\Unity\Editor\UnityBugReporter.exe
+    company:  Unity Technologies ApS
+    product:  Unity Bug Reporter
+    filedesc: Unity Bug Reporter
+    filever:  4.7.2.65147
+    prodver:  4.7.2.65147

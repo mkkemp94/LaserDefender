@@ -3,17 +3,18 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+	public GameObject playerLaser;
+	public float projectileSpeed;
+	public float firingRate = 0.2f;
+
 	public float speed = 15.0f;
 	public float padding = 1f;
 	
 	private float xmin;
 	private float xmax;
 	
-//	private Rigidbody2D body;
-	
 	// Use this for initialization
 	void Start () {
-//		body = GetComponent<Rigidbody2D>();
 		
 		// Distance between the camera and the player object
 		float distance = transform.position.z - Camera.main.transform.position.z;
@@ -29,11 +30,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once before rendering per frame
 	void Update () {
-		BasicMovement();
-	}
-	
-	void BasicMovement() {
-	
+		
 		// Left Arrow
 		if (Input.GetKey(KeyCode.LeftArrow)) {
 			transform.position += Vector3.left * speed * Time.deltaTime;
@@ -44,25 +41,24 @@ public class PlayerController : MonoBehaviour {
 			transform.position += Vector3.right * speed * Time.deltaTime;
 		}
 		
-		// Clamp position of body to playspace
+		// Space Down
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			InvokeRepeating("Fire", 0.00001f, firingRate);
+		}
+		
+		// Space Up
+		if (Input.GetKeyUp(KeyCode.Space)) {
+			CancelInvoke("Fire");
+		}
+		
+		// Clamp position of player body to playspace
 		float newX = Mathf.Clamp(transform.position.x, xmin, xmax);
 		transform.position = new Vector3(newX, transform.position.y, transform.position.z);
 	}
 	
-//	// Called just before performing physics calculations
-//	void FixedUpdate() {
-//		MoveStarship();
-//	}
-//	
-//	void MoveStarship() {
-//	
-//		// Grab input from keyboard
-//		float moveHorizontal = Input.GetAxis("Horizontal");
-//		float moveVertical = Input.GetAxis("Vertical");
-//		
-//		// Determine direction of force
-//		Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-//		body.AddForce(movement * speed);
-//		
-//	}
+	// Fire a beam
+	void Fire() {
+		GameObject beam = Instantiate(playerLaser, new Vector3(this.transform.position.x, playerLaser.transform.position.y, this.transform.position.z), Quaternion.identity) as GameObject;
+		beam.rigidbody2D.velocity = new Vector3(0, projectileSpeed, 0);
+	}
 }

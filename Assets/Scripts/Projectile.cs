@@ -8,7 +8,9 @@ public class Projectile : MonoBehaviour {
 		return damage;
 	} 
 	
-	public void Hit() {
+	public void Destroy() {
+	
+		// Destroy this object
 		Destroy(gameObject);
 	}
 }

@@ -61,4 +61,20 @@ public class PlayerController : MonoBehaviour {
 		GameObject beam = Instantiate(playerLaser, new Vector3(this.transform.position.x, playerLaser.transform.position.y, this.transform.position.z), Quaternion.identity) as GameObject;
 		beam.rigidbody2D.velocity = new Vector3(0, projectileSpeed, 0);
 	}
+	
+	// When something enters this trigger space
+	void OnTriggerEnter2D(Collider2D collider) {
+		
+		// Get the projectile object while is colliding with this enemy
+		Projectile missile = collider.gameObject.GetComponent<Projectile>();
+		
+		// Destroy the missile
+		missile.Destroy();
+		
+		// If the collission was with the missile
+		if (missile) {
+			
+			Debug.Log("Hit player");
+		}
+	}
 }

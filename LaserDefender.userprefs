@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\BlockBreaker\Assets\Scripts\Brick.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Entities\Enemies\EnemyBehavior.cs">
     <Files>
       <File FileName="..\BlockBreaker\Assets\Scripts\Brick.cs" Line="30" Column="2" />
       <File FileName="Assets\Entities\Player\PlayerController.cs" Line="27" Column="9" />
+      <File FileName="Assets\Scripts\Projectile.cs" Line="7" Column="14" />
+      <File FileName="Assets\Entities\Enemies\EnemyBehavior.cs" Line="11" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

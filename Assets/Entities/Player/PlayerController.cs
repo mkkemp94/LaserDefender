@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public float firingRate = 0.2f;
 
 	public float speed = 15.0f;
+	public float health = 250f;
 	public float padding = 1f;
 	
 	private float xmin;
@@ -58,7 +59,8 @@ public class PlayerController : MonoBehaviour {
 	
 	// Fire a beam
 	void Fire() {
-		GameObject beam = Instantiate(playerLaser, new Vector3(this.transform.position.x, playerLaser.transform.position.y, this.transform.position.z), Quaternion.identity) as GameObject;
+		Vector3 offset = new Vector3(0, 1f, 0);
+		GameObject beam = Instantiate(playerLaser, transform.position + offset, Quaternion.identity) as GameObject;
 		beam.rigidbody2D.velocity = new Vector3(0, projectileSpeed, 0);
 	}
 	
@@ -68,11 +70,17 @@ public class PlayerController : MonoBehaviour {
 		// Get the projectile object while is colliding with this enemy
 		Projectile missile = collider.gameObject.GetComponent<Projectile>();
 		
-		// Destroy the missile
-		missile.Destroy();
-		
 		// If the collission was with the missile
 		if (missile) {
+			
+			// Destroy the missile
+			missile.Destroy();
+			
+			// Reduce the health of the player by the missile's damage
+			health -= missile.GetDamage();
+			if (health <= 0) {
+				Destroy(gameObject);
+			}
 			
 			Debug.Log("Hit player");
 		}

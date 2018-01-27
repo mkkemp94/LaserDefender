@@ -7,8 +7,9 @@ public class FormationController : MonoBehaviour {
 	
 	public float formationWidth = 10f;
 	public float formationHeight = 5f;
+	public float speed = 1;
+	public float spawnDelay;
 	
-	public int speed = 1;
 	
 	private bool movingRight = true;
 	
@@ -26,7 +27,7 @@ public class FormationController : MonoBehaviour {
 		xmax = rightEdge.x;
 		
 		// Populate positions with enemies
-		CreateEnemies();
+		SpawnUntilFull();
 	}
 	
 	public void OnDrawGizmos() {
@@ -57,20 +58,34 @@ public class FormationController : MonoBehaviour {
 		
 		if (AllEnemiesDead()) {
 			Debug.Log("All enemies dead.");
-			CreateEnemies();
+			SpawnUntilFull();
 		}
 	}
 	
-	void CreateEnemies() {
-		// For every child in this transform...
-		foreach (Transform child in this.transform) {
+	void SpawnUntilFull() {
+	
+		Transform parentPosition = NextFreePosition();
+		if (null != parentPosition) {
+		
+			// Create new enemy at the origin
+			GameObject newEnemy = Instantiate(enemyPrefab, parentPosition.position, Quaternion.identity) as GameObject;
+			newEnemy.transform.parent = parentPosition;
 			
-			// Create an enemy at the origin.
-			GameObject enemy = Instantiate(enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
-			enemy.transform.parent = child;
-		}
+			Invoke("SpawnUntilFull", spawnDelay);
+		} 
 	}
 	
+	// Get the next free position
+	Transform NextFreePosition() {
+		foreach (Transform childPositionGameObject in transform) {
+			if (childPositionGameObject.childCount == 0) {
+				return childPositionGameObject;
+			}
+		}
+		return null;
+	}
+	
+	// Check if all enemies are dead
 	bool AllEnemiesDead() {
 		foreach (Transform childPositionGameObject in transform) {
 			if (childPositionGameObject.childCount > 0) {

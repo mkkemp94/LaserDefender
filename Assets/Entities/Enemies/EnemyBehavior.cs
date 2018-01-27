@@ -11,10 +11,13 @@ public class EnemyBehavior : MonoBehaviour {
 	public float projectileSpeed = 10;
 	public float shotsPerSecond = 0.5f;
 	
+	float maxCounter = Random.value * 300;
+	int randomCounter = 0;
+	
 	void Update() {
 		
 		// Fire randomly, based off frame rate
-		float probability = Time.deltaTime * shotsPerSecond;
+		float probability = Time.deltaTime + shotsPerSecond;
 		if (Random.value < probability) {
 			Fire();
 		}

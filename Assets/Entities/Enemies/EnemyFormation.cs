@@ -4,7 +4,7 @@ using System.Collections;
 /*
 	This script is attached to each enemy.
 */
-public class EnemyBehavior : MonoBehaviour {
+public class EnemyFormation : MonoBehaviour {
 
 	public float health = 150;
 	public GameObject projectile;

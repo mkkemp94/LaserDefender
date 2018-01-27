@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemySpawner : MonoBehaviour {
+public class FormationController : MonoBehaviour {
 
 	public GameObject enemyPrefab;
 	
@@ -25,14 +25,8 @@ public class EnemySpawner : MonoBehaviour {
 		xmin = leftEdge.x;
 		xmax = rightEdge.x;
 		
-		
-		// For every child in this transform...
-		foreach (Transform child in this.transform) {
-			
-			// Create an enemy at the origin.
-			GameObject enemy = Instantiate(enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
-			enemy.transform.parent = child;
-		}
+		// Populate positions with enemies
+		CreateEnemies();
 	}
 	
 	public void OnDrawGizmos() {
@@ -60,5 +54,29 @@ public class EnemySpawner : MonoBehaviour {
 		else if (rightEdgeOfFormation > xmax) {
 			movingRight = false;
 		}
+		
+		if (AllEnemiesDead()) {
+			Debug.Log("All enemies dead.");
+			CreateEnemies();
+		}
+	}
+	
+	void CreateEnemies() {
+		// For every child in this transform...
+		foreach (Transform child in this.transform) {
+			
+			// Create an enemy at the origin.
+			GameObject enemy = Instantiate(enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
+			enemy.transform.parent = child;
+		}
+	}
+	
+	bool AllEnemiesDead() {
+		foreach (Transform childPositionGameObject in transform) {
+			if (childPositionGameObject.childCount > 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

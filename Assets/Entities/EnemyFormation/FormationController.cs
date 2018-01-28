@@ -11,7 +11,7 @@ public class FormationController : MonoBehaviour {
 	public float spawnDelay;
 	
 	
-	private bool movingRight = false;
+	private bool movingRight = true;
 	
 	private float xmin;
 	private float xmax;

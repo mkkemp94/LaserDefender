@@ -3,8 +3,8 @@ Temp/*
 Library/**
 Temp/
 Library/
-Temp\*
+Temp\\*
 *
-Library\**
-Temp\
-Library\
+Library\\**
+Temp\\
+Library\\

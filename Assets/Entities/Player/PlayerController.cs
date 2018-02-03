@@ -62,6 +62,8 @@ public class PlayerController : MonoBehaviour {
 		Vector3 offset = new Vector3(0, 1f, 0);
 		GameObject beam = Instantiate(playerLaser, transform.position + offset, Quaternion.identity) as GameObject;
 		beam.rigidbody2D.velocity = new Vector3(0, projectileSpeed, 0);
+		
+		audio.Play();
 	}
 	
 	// When something enters this trigger space

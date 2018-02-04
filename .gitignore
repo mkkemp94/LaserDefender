@@ -1,24 +1,24 @@
-Temp/*
+./Temp/*
 *
-Library/**
-Temp/*
+./Library/**
+./Temp/*
 
-Library/*
-Temp/
-Library/
-Temp\\*
+./Library/*
+./Temp/
+./Library/
+./Temp\\*
 *
-Library\\**
-Temp\\*
+./Library\\**
+./Temp\\*
 
-Library\\*
-Temp\\
-Library\\
-Temp\*
+./Library\\*
+./Temp\\
+./Library\\
+./Temp\*
 *
-Library\**
-Temp\*
+./Library\**
+./Temp\*
 
-Library\*
-Temp\
-Library\
+./Library\*
+./Temp\
+./Library\

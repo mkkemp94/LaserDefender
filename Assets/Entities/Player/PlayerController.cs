@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
 	public float health = 250f;
 	public float padding = 1f;
 	
+	public AudioClip fireSound;
+	
 	private float xmin;
 	private float xmax;
 	
@@ -62,8 +64,7 @@ public class PlayerController : MonoBehaviour {
 		Vector3 offset = new Vector3(0, 1f, 0);
 		GameObject beam = Instantiate(playerLaser, transform.position + offset, Quaternion.identity) as GameObject;
 		beam.rigidbody2D.velocity = new Vector3(0, projectileSpeed, 0);
-		
-		audio.Play();
+		AudioSource.PlayClipAtPoint(fireSound, transform.position);
 	}
 	
 	// When something enters this trigger space

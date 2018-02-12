@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 	public float padding = 1f;
 	
 	public AudioClip fireSound;
+	private LevelManager levelManager;
 	
 	private float xmin;
 	private float xmax;
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour {
 		// Calculate xmin and xmax from the camera, instead of preset values.
 		xmin = leftmostPosition.x + padding;
 		xmax = rightmostPosition.x - padding;
+		
+		levelManager = FindObjectOfType<LevelManager>();
 	}
 	
 	// Update is called once before rendering per frame
@@ -83,6 +86,7 @@ public class PlayerController : MonoBehaviour {
 			health -= missile.GetDamage();
 			if (health <= 0) {
 				Destroy(gameObject);
+				levelManager.LoadLevel("Win Screen");
 			}
 			
 			Debug.Log("Hit player");

@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour {
 		xmax = rightmostPosition.x - padding;
 		
 		levelManager = FindObjectOfType<LevelManager>();
+//		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 	}
 	
 	// Update is called once before rendering per frame
@@ -85,11 +86,15 @@ public class PlayerController : MonoBehaviour {
 			// Reduce the health of the player by the missile's damage
 			health -= missile.GetDamage();
 			if (health <= 0) {
-				Destroy(gameObject);
-				levelManager.LoadLevel("Win Screen");
+				Die();
 			}
 			
 			Debug.Log("Hit player");
 		}
+	}
+	
+	void Die() {
+		Destroy(gameObject);
+		levelManager.LoadLevel("Win Screen");
 	}
 }

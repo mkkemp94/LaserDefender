@@ -2,10 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/*
+	This class keeps track of the static score.
+	Objects that use this script will be updated when score is called.
+*/
 public class ScoreKeeper : MonoBehaviour {
 
 	private Text scoreText;
-	public int score = 0;
+	public static int score = 0;
 	
 	void Start() {
 		scoreText = GetComponent<Text>();
@@ -18,8 +22,7 @@ public class ScoreKeeper : MonoBehaviour {
 		scoreText.text = score.ToString();
 	}
 	
-	public void Reset () {
+	public static void Reset () {
 		score = 0;
-		scoreText.text = score.ToString();
 	}
 }

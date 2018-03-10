@@ -1,9 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScoreKeeper.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\BlockBreaker\Assets\Scripts\Paddle.cs">
     <Files>
-      <File FileName="Assets\Entities\Enemies\EnemyBehavior.cs" Line="14" Column="10" />
-      <File FileName="Assets\Scripts\ScoreKeeper.cs" Line="7" Column="68" />
+      <File FileName="Assets\Entities\Enemies\EnemyBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ScoreKeeper.cs" Line="1" Column="1" />
+      <File FileName="Assets\Entities\Player\PlayerController.cs" Line="92" Column="75" />
+      <File FileName="Assets\Scripts\MusicPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Entities\EnemyFormation\FormationController.cs" Line="28" Column="2" />
+      <File FileName="..\BlockBreaker\Assets\Scripts\Paddle.cs" Line="23" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
